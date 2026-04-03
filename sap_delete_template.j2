@@ -1,0 +1,4 @@
+{% for item in items %}
+/configure service {{ item.SvcId }} sap {{ item.PortId }} shutdown
+/configure service {{ item.SvcId }} no sap {{ item.PortId }} 
+{% endfor %}
